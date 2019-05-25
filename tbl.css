@@ -1,0 +1,66 @@
+
+.menu {
+margin:10px auto;
+margin-left:-15px;
+font-weight:bold;
+margin-top:20px;
+height:22px;
+}
+.menu li {
+margin:3px;
+list-style:none;
+font-family:'Courier New;';
+}
+.menu a {
+	text-decoration:none;
+transition:all linear 0.15s;
+color:white;
+background:black;
+}
+.menu li:hover > a, .menu .current-item > a {
+text-decoration:none;
+color:black;
+}
+.menu > ul > li {
+float:left;
+display:inline-block;
+position:relative;
+font-size:17px;
+margin-left: 12px;
+}
+.menu > ul > li > a {
+padding:7px 80px;
+display:inline-block;
+text-shadow:0px 0px 0px rgba(0,0,0,0.4);
+border-radius:5px;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+background:white;
+opacity:.9;
+
+}
+.menu li:hover .sub-menu {
+z-index:1;
+opacity:0.9;
+}
+.sub-menu {
+width:100%;
+padding:10px 0px;
+position:absolute;
+top:100%;
+left:0px;
+z-index:-1;
+opacity:0;
+transition:opacity linear 0.15s;
+box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+}
+.sub-menu li {
+display:block;
+font-size:18px;
+}
+.sub-menu li a {
+padding:10px 30px;
+display:block;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+}
